@@ -40,7 +40,7 @@ label h2 {
     font-size: 1.25em;
 }
 .info ul li {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
@@ -59,4 +59,11 @@ label .checkbox {
 /*Стили для отображения дополнительной информации*/
 .checkbox:checked ~ .info {
     display: flex;
+}
+
+/*При размере экрана <= 600, секция будет в ширину 100%*/
+@media screen and (max-width: 600px) {
+    main section {
+        width: 100%;
+    }
 }
