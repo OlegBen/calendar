@@ -10,7 +10,7 @@ header {
     background-color: orangered;
 }
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /*Стили для секций, в которых хранится вся инфа о лекции*/
@@ -24,7 +24,6 @@ strong {
 }
 h2 {
     font-size: 2em;
-    font-family: 'Sniglet', cursive;
 }
 section {
     min-width: 80%;
@@ -35,7 +34,6 @@ section {
     display: none;
     flex-direction: column;
     align-items: center;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 li {
     font-size: 1em;
