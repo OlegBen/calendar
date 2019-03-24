@@ -89,4 +89,12 @@ label .checkbox {
     label h2 {
         margin-left: 10px;
     }
+    label .info {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .checkbox:checked ~ label .info {
+        display: flex;
+    }
 }
