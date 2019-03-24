@@ -29,6 +29,7 @@ main section {
 
 label h2 {
     font-size: 2em;
+    max-width: 85%;
 }
 label i {
     position: absolute;
