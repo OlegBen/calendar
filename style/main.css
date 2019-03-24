@@ -2,6 +2,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Segoe UI", "Khmer UI";
 }
 
 /*Стили для шапки*/
@@ -28,7 +29,16 @@ main section {
 
 label h2 {
     font-size: 2em;
-    font-family: 'Sniglet', cursive;
+}
+label i {
+    position: absolute;
+    font-size: 2em;
+    color: black;
+    top: 35px;
+    left: 90%;
+}
+label .fa-caret-up {
+    display: none;
 }
 
 .info {
@@ -41,11 +51,11 @@ label h2 {
 }
 .info ul li {
     font-size: 1.2em;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 /*Для создания кликабильности*/
 section label {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -60,10 +70,22 @@ label .checkbox {
 .checkbox:checked ~ .info {
     display: flex;
 }
+.checkbox:checked ~ .fa-caret-up {
+    display: block;
+}
+.checkbox:checked ~ .fa-caret-down {
+    display: none;
+}
 
 /*При размере экрана <= 600, секция будет в ширину 100%*/
 @media screen and (max-width: 600px) {
     main section {
         width: 100%;
+    }
+    section label {
+        align-items: flex-start;
+    }
+    label h2 {
+        margin-left: 10px;
     }
 }
